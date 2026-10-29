@@ -1,0 +1,428 @@
+.site-header {
+  padding: 24px 6%;
+  color: #172849;
+  border-bottom: 1px solid #D6D0C8;
+  overflow: visible;
+}
+.site-header .interface {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 850px;
+  width: 100%;
+}
+.site-header .logo {
+  flex: 0 0 auto;
+  font-size: 20px;
+  white-space: nowrap;
+  font-weight: bold;
+}
+.site-header .edition {
+  margin: 0;
+  max-width: 170px;
+  line-height: 1.25;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 80px;
+  width: 100%;
+  margin: 0;
+  padding: 18px 12px;
+  background-color: #172849;
+  border-top: 3px solid #F18C86;
+}
+.menu a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+.menu a:hover {
+  color: #E8A5B9;
+}
+.logo {
+  overflow: hidden;
+  color: #172849;
+  text-decoration: none;
+  font-size: 20px;
+}
+.edition {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #E0726A;
+  white-space: nowrap;
+}
+.linha-embaixo {
+  margin-top: 8px;
+  margin-bottom: 20px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.button-header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+}
+.button-header nav ul li a {
+  padding: 5px 60px;
+}
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  color: #172849;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  font-size: clamp(2rem, 5vw, 5.5rem);
+  max-width: 70vw;
+  display: block;
+  margin-left: 5px;
+  margin-bottom: 28px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+h2 {
+  color: #172849;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  font-size: 20px;
+  max-width: 70vw;
+  display: block;
+  margin-left: 8px;
+  margin-top: 10px;
+  margin-bottom: 28px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.destaque {
+  font-style: italic;
+  color: #E0726A;
+}
+body {
+  background-color: #F5F0E8;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+p {
+  color: black;
+  margin-left: 6px;
+}
+/* Transforma o container em um flexbox, uma caixinha, vertical */
+.container-pagina {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh; /* Altura total da janela de visualização */
+}
+/* Faz o conteúdo principal crescer e empurrar o rodapé para baixo */
+.conteudo-principal {
+  flex: 1;
+}
+/* Estilo base do card */
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
+  display: inline-block;
+  width: calc(50% - 16px);
+  max-width: 630px;
+  min-height: 140px;
+  background-color: pink;
+  border-radius: 8px;
+  overflow: hidden;
+  text-decoration: none; /* Remove o sublinhado padrão do link */
+  color: black; /* Define a cor padrão do texto */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  cursor: pointer; /* Mostra o ícone de mãozinha ao passar o mouse */
+  margin-bottom: 10px;
+  margin-left: 8px;
+}
+.card-5 {
+  display: inline-block;
+  width: 355px;
+  min-height: 140px;
+  background-color: #FF7F76;
+  border-radius: 8px;
+  overflow: hidden;
+  text-decoration: none;
+  color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  cursor: pointer;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  margin-left: 8px;
+}
+.card-conteudo {
+  padding: 16px;
+}
+.card-conteudo h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.25rem;
+}
+.card-conteudo p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #666666;
+}
+.card-5-conteudo p,
+.card-6-conteudo p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #444444;
+}
+/* Efeito interativo ao passar o mouse (Hover) */
+.card-1:hover,
+.card-2:hover,
+.card-3:hover,
+.card-4:hover {
+  transform: translateY(-4px); /* Eleva levemente o card */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #FFACBA;
+}
+.card-5:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #FF685D;
+}
+.card-6 {
+  display: flex;
+  width: 355px;
+  max-width: calc(100% - 16px);
+  min-height: 140px;
+  margin: 8px 8px 24px;
+  padding: 0;
+  background-color: #FF7F76;
+  border: none;
+  border-radius: 8px;
+  color: black;
+  text-align: left;
+  font-family: inherit;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  cursor: pointer;
+  margin-left: 8px;
+}
+#veja {
+  display: flow-root;
+  padding-bottom: 2px;
+}
+.card-final {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 16px;
+  width: 100%;
+  padding: 0 8px;
+  margin: 24px 0 32px;
+  box-sizing: border-box;
+}
+.card-final .card-5,
+.card-final .card-6 {
+  flex: 1 1 0;
+  width: 0;
+  min-width: 0;
+  box-sizing: border-box;
+  display: flex;
+  min-height: 140px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 8px;
+  text-align: left;
+  font-family: inherit;
+  font-size: inherit;
+}
+.card-final .card-conteudo {
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+}
+.card-final .card-conteudo h3 {
+  margin: 0 0 8px;
+  font-size: 1.25rem;
+}
+.card-final .card-conteudo p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+.card-6:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #FF685D;
+}
+/* Fundo escurecido atrás da janela */
+.fundo-painel {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgba(23, 40, 73, 0.65);
+}
+.fundo-painel[hidden] {
+  display: none;
+}
+/* Janela das redes sociais */
+.painel-redes {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  padding: 30px 24px 24px;
+  background-color: #F5F0E8;
+  border-top: 5px solid #F18C86;
+  border-radius: 12px;
+}
+.painel-redes h2 {
+  max-width: none;
+  margin: 0 25px 12px 0;
+  font-size: 22px;
+}
+.painel-redes p {
+  margin: 0 0 18px;
+  line-height: 1.5;
+}
+.painel-redes a {
+  display: block;
+  padding: 14px;
+  margin-top: 10px;
+  border-radius: 7px;
+  background-color: #FFACBA;
+  color: #172849;
+  font-weight: bold;
+  text-decoration: none;
+}
+.painel-redes a:hover {
+  background-color: #F18C86;
+}
+.fechar-redes {
+  position: absolute;
+  top: 8px;
+  right: 14px;
+  border: none;
+  background: none;
+  color: #172849;
+  font-size: 30px;
+  cursor: pointer;
+}
+.card:active {
+  transform: translateY(0); /* Efeito de clique */
+}
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 28px 5%;
+  border-top: 1px solid #D6D0C8;
+}
+.site-footer p {
+  margin: 0;
+  flex: 1 1 150px;
+  color: #172849;
+  font-size: 15px;
+}
+.site-footer a {
+  color: #172849;
+  text-decoration: none;
+  font-weight: bold;
+}
+.site-footer a:hover {
+  color: #D85F65;
+}
+.site-footer .footer-logo {
+  flex: 0 0 auto;
+  max-width: none;
+  margin: 0;
+  font-size: 20px;
+  white-space: nowrap;
+  gap: 850px;
+}
+.site-footer .voltar-topo {
+  flex: 0 0 auto;
+  max-width: 120px;
+  font-size: 14px;
+}
+@media (max-width: 600px) {
+  .menu {
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 16px 10px;
+  }
+  .site-header .interface {
+    gap: 75px;
+  }
+  .card-1,
+  .card-2,
+  .card-3,
+  .card-4 {
+    display: block;
+    min-width: none;
+    box-sizing: border-box;
+    margin-right: 8px;
+    margin-left: 8px;
+    width: calc(100% - 16px);
+    max-width: none;
+    min-height: 140px;
+  }
+  #veja {
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 5px;
+  }
+  .card-final {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 0;
+    margin: 24px 0 0;
+    box-sizing: border-box;
+  }
+  .card-final .card-5,
+  .card-final .card-6 {
+    display: flex;
+    flex: none; 
+    min-height: 140px;
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+}
