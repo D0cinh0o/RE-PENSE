@@ -378,14 +378,21 @@ p {
   max-width: 120px;
   font-size: 14px;
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .menu {
     flex-wrap: wrap;
-    gap: 30px;
-    padding: 16px 10px;
+    gap: 16px;
   }
   .site-header .interface {
-    gap: 75px;
+    gap: 20px; 
+    flex-wrap: wrap;
+  }
+  .menu a {
+    padding: 5px 10px;
+  }
+  img {
+    max-widgth: 100%;
+    height: auto;
   }
   .card-1,
   .card-2,
